@@ -1,4 +1,4 @@
-# Data Pagination and Filtering
+# [Data Pagination and Filtering](https://stanciuvictor.github.io/Data_Pagination_and_Filtering/)
  
 This application takes students' info from an array of 42 elements and displays 9 students per page.
 
