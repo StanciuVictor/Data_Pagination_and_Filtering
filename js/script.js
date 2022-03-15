@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     * @param {array} list  - Student data
     * @param {number} page - The page number
     */
-   function showPage(list, page) {
+   function showPage (list, page) {
 
       // Indexes of the selected 9 students - interval [start; end)
       const startIndex = page * itemsPerPage - itemsPerPage;
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     * 
     * @param {array} list - Student data
     */
-   function addPagination(list) {
+   function addPagination (list) {
       //Number of pagination buttons needed
       const numPagButtons = Math.ceil(list.length / itemsPerPage);
 
@@ -169,13 +169,13 @@ document.addEventListener('DOMContentLoaded', () => {
     * @param {array} list  - Student data
     * @param {string} name - Names or letters introduced by user in search input
     */
-   function searchFn(list, name) {
+   function searchFn (list, name) {
       const ulStudent = document.querySelector('ul.student-list');
 
       // Remove any students that might have previously been displayed.
       ulStudent.innerHTML = '';
 
-      // Array containing student mathing the search input.
+      // Array containing student matching the search input.
       const filteredList = [];
 
       for (let i = 0; i < list.length; i++) {
